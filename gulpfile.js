@@ -22,15 +22,26 @@ gulp.task("compile", () => {
         .pipe(tsc(tsProject));
     return tsResult.js
         .pipe(sourcemaps.write("."))
-        .pipe(gulp.dest("build"));
+        .pipe(gulp.dest("build/app"));
 });
 
 /**
  * Copy all resources that are not TypeScript files into build directory.
  */
+gulp.task("app", () => {
+    return gulp.src(["app/**/*", "!**/*.ts"])
+        .pipe(gulp.dest("build/app"))
+});
+
 gulp.task("resources", () => {
-    return gulp.src(["app/**/*", "!**/*.ts", "index.html", "app.css", "bg.gif","systemjs.config.js"])
+    return gulp.src(["index.html","app.css", "bg.gif",
+                     "systemjs.config.js"])
         .pipe(gulp.dest("build"))
+});
+
+gulp.task("i18n", () => {
+    return gulp.src(["i18n/*"])
+        .pipe(gulp.dest("build/i18n"))
 });
 
 /**
@@ -57,6 +68,6 @@ gulp.task("libs", () => {
 /**
  * Build the project.
  */
-gulp.task("build", ['compile', 'resources', 'libs'], () => {
+gulp.task("build", ['compile', 'resources', 'app', 'i18n', 'libs'], () => {
     console.log("Building the project ...")
 });
