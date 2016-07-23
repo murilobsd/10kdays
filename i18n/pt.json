@@ -1,0 +1,9 @@
+{
+    "TITLE": "Mozilla - 10k Dias da Web!",
+    "SHARE": "Compartilhe",
+    "PLACEHOLDER": "Digite a data aqui - Formato: dia/mês/ano",
+	"WELCOME": "Faltam <b>{{ value }} dias</b> para celebrarmos 10.000 Dias da Web!<br>É um divertido e interessante marco que estamos deixando para trás. Esperamos que vocês sejam parte dessa celebração online com a hashtag <strong>#10kDays</strong> e <strong>#MozillaBrasil</strong>",
+	"MSG_ERROR_DATA": "Data maior do que a data final dos 10.000 dias",
+	"MSG_DAYS": "Entre os 10 mil dias de Web esse é o dia de número: <strong>{{ value }}</strong>",
+    "INVALID_FORMAT_DATE": "Data inválida utilize no formato: dd/mm/yyyy ou mm/dd/yyyy"
+}

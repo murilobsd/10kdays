@@ -1,0 +1,9 @@
+{
+    "TITLE": "Mozilla - 10k Days of the Web!",
+    "SHARE": "Share",
+    "PLACEHOLDER": "Input the date - Format: month/day/year",
+    "WELCOME": "{{ value }} days left until you can celebrate 10k Days of the web!<br>It’s a fun and interesting milestone that we are rallying behind. I’m hoping that Mozilla Brazil will be a part of the online celebration with <strong>#10kDays</strong> and e <strong>#Mozilla</strong>",
+    "MSG_ERROR_DATA": "The date is greater than the data for 10k Days",
+    "MSG_DAYS": "Among the 10k days of Web that is the day number: <strong>{{ value }}</strong>",
+    "INVALID_FORMAT_DATE": "Invalid date please use on this format: dd/mm/yyyy or mm/dd/yyyy"
+}
